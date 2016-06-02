@@ -36,7 +36,15 @@ gem "carrierwave"
 
 gem "mini_magick"
 
+<<<<<<< HEAD
 gem "simple_form"
+=======
+gem "devise"
+
+gem "bootstrap-sass"
+
+gem "awesome_rails_console" # 讓你的 rails console 變整齊漂亮的 gem
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

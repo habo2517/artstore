@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+<<<<<<< HEAD
  def admin?
    is_admin
  end
@@ -15,4 +16,10 @@ class User < ActiveRecord::Base
     self.update_columns(is_admin: false)
   end
 
+=======
+
+  def admin?
+    is_admin
+  end
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
 end

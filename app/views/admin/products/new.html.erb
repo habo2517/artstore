@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <h2> 新增產品 </h2>
 
@@ -34,6 +35,30 @@
   </div>
 
 
+=======
+<%= form_for [:admin, @product] do |f| %>
+
+  <div class="group">
+    <%= f.label("標題") %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="group">
+    <%= f.label("敘述") %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="group">
+    <%= f.label("數量") %>
+    <%= f.text_field :quantity %>
+  </div>
+
+  <div class="group">
+    <%= f.label("價錢") %>
+    <%= f.text_field :price %>
+  </div>
+
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
   <%= f.submit "Submit", data: { disable_with: "Submitting..." } %>
 
 <% end %>

@@ -1,4 +1,5 @@
 class Admin::ProductsController < ApplicationController
+<<<<<<< HEAD
 layout "admin"
 
 before_action :authenticate_user!
@@ -6,11 +7,22 @@ before_action :admin_required
 
   def index
      @products = Product.all
+=======
+
+  before_action :authenticate_user!
+  before_action :admin_required
+
+  def index
+    @products = Product.all
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
   end
 
   def new
     @product = Product.new
+<<<<<<< HEAD
     @photo = @product.build_photo
+=======
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
   end
 
   def create
@@ -23,6 +35,7 @@ before_action :admin_required
     end
   end
 
+<<<<<<< HEAD
   def edit
     @product = Product.find(params[:id])
 
@@ -50,5 +63,11 @@ before_action :admin_required
     #params.require(:product).permit(:title, :description, :quantity, :price)
     params.require(:product).permit(:title, :description, :quantity,:price,
     photo_attributes: [:image, :id])
+=======
+  private
+
+  def product_params
+    params.require(:product).permit(:title, :description, :quantity, :price)
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629
   end
 end

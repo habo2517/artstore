@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD:app/assets/stylesheets/application.css.scss
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "font-awesome";
@@ -24,3 +25,8 @@
    font-weight: bold;
    color: #ff007c;
 }
+=======
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+>>>>>>> 76fee7feedb4ccc32977c74e3afc34d55731f629:app/assets/stylesheets/application.css.scss
